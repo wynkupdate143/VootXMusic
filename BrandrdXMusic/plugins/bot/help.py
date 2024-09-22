@@ -1,7 +1,7 @@
 from typing import Union
 
 from pyrogram import filters, types
-from pyrogram.types import InlineKeyboardMarkup, Message
+from pyrogram.types import InlineKeyboardMarkup, Message, InlineKeyboardButton
 
 from BrandrdXMusic import app
 from BrandrdXMusic.utils import help_pannel
@@ -10,6 +10,8 @@ from BrandrdXMusic.utils.decorators.language import LanguageStart, languageCB
 from BrandrdXMusic.utils.inline.help import help_back_markup, private_help_panel
 from config import BANNED_USERS, START_IMG_URL, SUPPORT_CHAT
 from strings import get_string, helpers
+from BrandrdXMusic.utils.stuffs.buttons import BUTTONS
+from BrandrdXMusic.utils.stuffs.helper import Helper
 
 
 @app.on_message(filters.command(["help"]) & filters.private & ~BANNED_USERS)
@@ -89,28 +91,29 @@ async def helper_cb(client, CallbackQuery, _):
         await CallbackQuery.edit_message_text(helpers.HELP_14, reply_markup=keyboard)
     elif cb == "hb15":
         await CallbackQuery.edit_message_text(helpers.HELP_15, reply_markup=keyboard)
-    elif cb == "hb16":
-        await CallbackQuery.edit_message_text(helpers.HELP_16, reply_markup=keyboard)
-    elif cb == "hb17":
-        await CallbackQuery.edit_message_text(helpers.HELP_17, reply_markup=keyboard)
-    elif cb == "hb18":
-        await CallbackQuery.edit_message_text(helpers.HELP_18, reply_markup=keyboard)
-    elif cb == "hb19":
-        await CallbackQuery.edit_message_text(helpers.HELP_19, reply_markup=keyboard)
-    elif cb == "hb20":
-        await CallbackQuery.edit_message_text(helpers.HELP_20, reply_markup=keyboard)
-    elif cb == "hb21":
-        await CallbackQuery.edit_message_text(helpers.HELP_21, reply_markup=keyboard)
-    elif cb == "hb22":
-        await CallbackQuery.edit_message_text(helpers.HELP_22, reply_markup=keyboard)
+    
+
+@app.on_callback_query(filters.regex("mbot_cb") & ~BANNED_USERS)
+async def helper_cb(client, CallbackQuery):
+    await CallbackQuery.edit_message_text(Helper.HELP_M, reply_markup=InlineKeyboardMarkup(BUTTONS.MBUTTON))
 
 
-@app.on_callback_query(filters.regex("dilXaditi") & ~BANNED_USERS)
-@languageCB
-async def first_pagexx(client, CallbackQuery, _):
-    menu_next = second_page(_)
-    try:
-        await CallbackQuery.message.edit_text(_["help_1"], reply_markup=menu_next)
-        return
-    except:
-        return
+@app.on_callback_query(filters.regex('managebot123'))
+async def on_back_button(client, CallbackQuery):
+    callback_data = CallbackQuery.data.strip()
+    cb = callback_data.split(None, 1)[1]
+    keyboard = help_pannel(_, True)
+    if cb == "settings_back_helper":
+        await CallbackQuery.edit_message_text(
+            _["help_1"].format(SUPPORT_CHAT), reply_markup=keyboard
+        )
+
+@app.on_callback_query(filters.regex('mplus'))      
+async def mb_plugin_button(client, CallbackQuery):
+    callback_data = CallbackQuery.data.strip()
+    cb = callback_data.split(None, 1)[1]
+    keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"mbot_cb")]])
+    if cb == "Okieeeeee":
+        await CallbackQuery.edit_message_text(f"`something errors`",reply_markup=keyboard,parse_mode=enums.ParseMode.MARKDOWN)
+    else:
+        await CallbackQuery.edit_message_text(getattr(Helper, cb), reply_markup=keyboard)
