@@ -14,12 +14,12 @@
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "16898897",
+        "value": "27450723",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "d52fabe7334e612a32f0dde256c45a53",
+        "value": "0d3086be6c186b9a92f54e786da5b68c",
         "required": true
       },
       "BOT_TOKEN": {
@@ -34,7 +34,7 @@
       },
       "OWNER_ID": {
         "description": "The user id of user whom you would like to add as OWNER.",
-        "value": "7160246535",
+        "value": "6499404675",
         "required": true
       },
       "STRING_SESSION": {
