@@ -1,11 +1,1 @@
-# Netscape HTTP Cookie File
-# This is a generated file! Do not edit.
 
-# domain  include_subdomains  path  secure  expiration_date  name  value
-.youtube.com	TRUE	/	TRUE	1733202202	GPS	1
-.youtube.com	TRUE	/	TRUE	0	YSC	c3OG1msoBMg
-.youtube.com	TRUE	/	TRUE	1764577460	__Secure-1PSIDTS	sidts-CjIBQT4rX5ok3p_hWni76q_vzdlzMv7tPBbhFNqHB-dmp45kvcubxEWZs_f2DLoHvi01uxAA
-.youtube.com	TRUE	/	TRUE	1748593355	__Secure-ROLLOUT_TOKEN	CLvKq7-Oh72kogEQneKdjsqAigMY4s7hkpKGigM%3D
-.youtube.com	TRUE	/	TRUE	1767760490	PREF	f7=100&tz=Asia.Calcutta&f5=20000
-.youtube.com	TRUE	/	TRUE	1748752353	VISITOR_PRIVACY_METADATA	CgJJThIEGgAgNQ%3D%3D
-.youtube.com	TRUE	/	TRUE	1748752353	VISITOR_INFO1_LIVE	mq9jSFxn5WI
