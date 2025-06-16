@@ -11,13 +11,13 @@ from BrandrdXMusic.utils.database import add_served_chat, get_assistant
 @app.on_message(filters.command("repo"))
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/ec19cf227791a167abedc.jpg",
-        caption=f"""🍁 𝐏𝐀𝐇𝐋𝐄 𝐉𝐀𝐊𝐄 𝐀𝐍𝐈𝐌𝐀𝐋 𝐊𝐎 𝐏𝐀𝐏𝐀 𝐁𝐎𝐋 🍁""",
+        photo=f"https://files.catbox.moe/zivxwq.jpg",
+        caption=f"""🎧 Music Bot ka Repo chahiye?\n😅 Sorry bhai, yeh repo free mein nahi milega! 🙅‍♂️🚫\n\n💰 Ye koi roadside DJ system nahi hai 😎🎛️\n🔥 Premium quality chahiye toh 💸 lagana padega!\n👇 Neeche wala button dabao aur 📬 DM karlo\n📦 Best offer for best repo! 🧠💡🎶""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🍁 sᴏᴜʀᴄᴇ 🍁", url=f"https://t.me/smartness_to_hai"
+                        "🛠️ 𝗕𝗢𝗧 𝗠𝗔𝗦𝗧𝗘𝗥", url=f"https://t.me/AboutBotMaker"
                     )
                 ]
             ]
@@ -28,13 +28,13 @@ async def help(client: Client, message: Message):
 @app.on_message(filters.command("clone"))
 async def clones(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/ec19cf227791a167abedc.jpg",
-        caption=f"""**🙂You Are Not Sudo User So You Are Not Allowed To Clone Me.**\n**😌Click Given Below Button And Host Manually Otherwise Contact Owner Or Sudo Users For Clone.**""",
+        photo=f"https://files.catbox.moe/zivxwq.jpg",
+        caption=f"""🎭 Music Bot ka Clone chahiye?\n😅 Sorry bhai, clone bhi free mein nahi milega! 🙅‍♂️🛑\n\n🧠 Original jaisa duplicate chahiye toh 💸 pay karna padega!\n⚙️ Ye koi ctrl+c ctrl+v ka kaam nahi hai 😎🤖\n\n👇 Neeche button dabao aur 📬 DM karlo\n📦 Best price for premium clone! 🧬🔥""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🍁 sᴏᴜʀᴄᴇ 🍁", url=f"https://t.me/smartness_to_hai"
+                        "🛠️ 𝗕𝗢𝗧 𝗠𝗔𝗦𝗧𝗘𝗥", url=f"https://t.me/AboutBotMaker"
                     )
                 ]
             ]
