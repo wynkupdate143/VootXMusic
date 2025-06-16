@@ -220,7 +220,7 @@ queue_8 : "<b>{0} ᴘʟᴀʏᴇʀ</b>\n\n🎄 <b>sᴛʀᴇᴀᴍɪɴɢ :</b> {1}
 
 stream_1 : "<blockquote>➲ <b>Sᴛᴀʀᴛᴇᴅ Sᴛʀᴇᴀᴍɪɴɢ |</b></blockquote>\n\n<blockquote><b>➠ Tɪᴛʟᴇ :</b> <a href={0}>{1}</a>\n<b>➠ Dᴜʀᴀᴛɪᴏɴ :</b> {2} ᴍɪɴᴜᴛᴇs\n<b>➠ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ :</b> {3}</blockquote>\n\n<b><blockquote>➲ Dᴇᴘʟᴏʏᴇᴅ Bʏ | </b><a href='https://t.me/AboutBotMaker'>⏤͟͟͞͞𓆩 𝐁ᴏᴛ ꭙ 𝐌ᴀᴋᴇʀ𓆪 </a>‌\n</blockquote>"
 stream_2 : "➲ <b> Sᴛᴀʀᴛᴇᴅ Sᴛʀᴇᴀᴍɪɴɢ |</b>\n\n<b>➠ Sᴛʀᴇᴀᴍ ᴛʏᴘᴇ :</b> ʟɪᴠᴇ sᴛʀᴇᴀᴍ [ᴜʀʟ]\n<b>➠ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ :</b> {0}" 
-stream_3 : "<blockquote>➲ <b>Mᴀᴅᴇ ʙʏ ➠ [⏤͟͟͞͞𓆩 𝐁ᴏᴛ ꭙ 𝐌ᴀᴋᴇʀ𓆪](https://t.me/AboutBotMaker)</blockquote>"
+stream_3 : "➲ <b>Mᴀᴅᴇ ʙʏ ➠ [⏤͟͟͞͞𓆩 𝐁ᴏᴛ ꭙ 𝐌ᴀᴋᴇʀ𓆪](https://t.me/AboutBotMaker)"
 
 #General
 CLOSE_BUTTON  : "↻ ᴄʟᴏsᴇ ↻"
