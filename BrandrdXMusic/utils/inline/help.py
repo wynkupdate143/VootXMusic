@@ -21,15 +21,15 @@ def help_pannel(_, START: Union[bool, int] = None):
             
             [
                     InlineKeyboardButton(
-                        "🎩 𝙊𝙬𝙣𝙚𝙧", url=f"https://t.me/AboutBotMaker"
+                        "🎩 𝙊𝙬𝙣𝙚𝙧", url=f"https://t.me/II_AKKU_II"
                     )
                 ,
                     InlineKeyboardButton(
-                        "📌 𝗨𝗣𝗗𝗔𝗧𝗘", url=f"https://t.me/KING_BOT_UPDATE"
+                        "📌 𝗨𝗣𝗗𝗔𝗧𝗘", url=f"https://t.me/BOTXBAZAAR"
                     )
                 ]         ,       [
                     InlineKeyboardButton(
-                        "🛠️ 𝗕𝗢𝗧 𝗠𝗔𝗦𝗧𝗘𝗥", url=f"https://t.me/KING_BOTS_MAKER"
+                        "🛠️ 𝗕𝗢𝗧 𝗠𝗔𝗦𝗧𝗘𝗥", url=f"https://t.me/II_AKKU_II"
                     )
                 ],
             mark,
